@@ -1,0 +1,4 @@
+.au-btn:disabled {
+    cursor: not-allowed!important;
+    background-color: grey;
+}

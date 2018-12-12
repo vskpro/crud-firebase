@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h2 class="title-1 m-b-25">List</h2>
+    <table class="table table-borderless table-striped table-earning" *ngIf="users && users.length">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of users">
+          <td>{{item.id}}</td>
+          <td>{{item.content.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

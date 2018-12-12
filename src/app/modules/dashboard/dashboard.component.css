@@ -1,0 +1,12 @@
+.navbar-mobile.show {
+    visibility: visible;
+    display: block;
+}
+
+.menu-sidebar a {
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}

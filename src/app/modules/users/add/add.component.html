@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">Add User</div>
+      <div class="card-body card-block">
+        <form addUserForm="ngForm" (ngSubmit)="addUser()">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">Username</div>
+              <input type="text" [(ngModel)]="username" name="username" class="form-control">
+              <div class="input-group-addon">
+                <i class="fa fa-user"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions form-group">
+            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="table-responsive table--no-card m-b-40">
+      <table class="table table-borderless table-striped table-earning" *ngIf="users && users.length">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of users">
+            <td>{{item.id}}</td>
+            <td>{{item.content.name}}</td>
+            <td><button [routerLink]="['edit/'+item.id]">Edit</button></td>
+            <td><button (click)="delete(item.id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
