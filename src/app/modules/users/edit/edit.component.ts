@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EditComponent implements OnInit {
 
-  private editData;
+  public editData;
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit() {

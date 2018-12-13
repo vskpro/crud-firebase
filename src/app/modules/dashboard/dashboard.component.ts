@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  private userName;
+  public userName;
 
   constructor(private afAuth: AngularFireAuth, private router: Router, private authService: AuthenticationService) {
 

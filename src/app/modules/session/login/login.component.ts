@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  private user: any;
-  isSubmitted: Boolean;
+  public user: any;
+  public isSubmitted: Boolean;
 
   constructor(private authService: AuthenticationService, private router: Router) {
     this.initForm();
